@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pranjal Sonkiya - Resume | B.Tech CSE Student</title>
+  <meta name="description" content="Official Resume of Pranjal Sonkiya, B.Tech CSE 1st Year student at JECRC University, Jaipur.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #4f46e5;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #f8fafc;
+      --card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 2rem 1rem;
+    }
+
+    .toolbar {
+      max-width: 850px;
+      margin: 0 auto 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s;
+    }
+
+    .btn-back {
+      background: #e2e8f0;
+      color: #334155;
+    }
+    .btn-back:hover {
+      background: #cbd5e1;
+    }
+
+    .btn-print {
+      background: var(--accent);
+      color: #fff;
+    }
+    .btn-print:hover {
+      background: #4338ca;
+    }
+
+    .resume-paper {
+      max-width: 850px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 3rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    }
+
+    .header-section {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 1.5rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .candidate-name {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.1;
+      margin-bottom: 0.3rem;
+    }
+
+    .candidate-subtitle {
+      font-size: 1.1rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+    }
+
+    .contact-info {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      text-align: right;
+    }
+
+    .contact-info a {
+      color: var(--text);
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--primary);
+      border-bottom: 1.5px solid var(--border);
+      padding-bottom: 0.3rem;
+      margin: 1.5rem 0 0.8rem;
+    }
+
+    .summary-text {
+      font-size: 0.95rem;
+      color: #334155;
+      line-height: 1.6;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.2rem;
+    }
+
+    .item-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .item-org {
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .item-date {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .item-desc {
+      font-size: 0.9rem;
+      color: #334155;
+      margin-bottom: 0.4rem;
+    }
+
+    ul.bullet-list {
+      padding-left: 1.2rem;
+      font-size: 0.9rem;
+      color: #334155;
+      margin-bottom: 0.8rem;
+    }
+
+    ul.bullet-list li {
+      margin-bottom: 0.3rem;
+    }
+
+    .skills-row {
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .skills-label {
+      font-weight: 700;
+      color: var(--primary);
+      display: inline-block;
+      min-width: 170px;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+      }
+      .toolbar {
+        display: none !important;
+      }
+      .resume-paper {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .header-section {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .contact-info {
+        text-align: left;
+      }
+      .resume-paper {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <a href="index.html" class="btn btn-back">← Back to Portfolio</a>
+    <button onclick="window.print()" class="btn btn-print">🖨️ Print / Save as PDF</button>
+  </div>
+
+  <div class="resume-paper">
+    <!-- Header -->
+    <header class="header-section">
+      <div>
+        <h1 class="candidate-name">Pranjal Sonkiya</h1>
+        <p class="candidate-subtitle">B.Tech Computer Science Engineering Student</p>
+        <p style="font-size: 0.88rem; color: #475569;">JECRC University, Jaipur • Aspiring Software Engineer</p>
+      </div>
+      <div class="contact-info">
+        <div><strong>Email:</strong> <a href="mailto:pranjal.26bcon0675@jecrcu.edu.in">pranjal.26bcon0675@jecrcu.edu.in</a></div>
+        <div><strong>Phone:</strong> <a href="tel:9079175294">+91 9079175294</a></div>
+        <div><strong>Location:</strong> Jaipur, Rajasthan, INDIA</div>
+        <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pranjal-sonkiya-b70b28413/" target="_blank">linkedin.com/in/pranjal-sonkiya</a></div>
+        <div><strong>GitHub:</strong> <a href="https://github.com/pranjalsonkiya9" target="_blank">github.com/pranjalsonkiya9</a></div>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section>
+      <h2 class="section-title">Professional Summary</h2>
+      <p class="summary-text">
+        First-year Computer Science Engineering student at JECRC University, Jaipur, with a keen passion for 
+        software engineering, algorithmic problem solving, and generative AI workflows. Demonstrated ability 
+        to apply modern tools (ChatGPT, Gemini, Claude, NotebookLM, Gamma AI) alongside core programming languages 
+        (C, Python, JavaScript) to deliver structured technical reports, presentations, and code solutions. 
+        Committed to disciplined learning and seeking software engineering internship opportunities to contribute and grow.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2 class="section-title">Education</h2>
+      <div class="item-header">
+        <div>
+          <span class="item-title">Bachelor of Technology (B.Tech) - Computer Science & Engineering</span>
+          <div class="item-org">JECRC University, Jaipur, Rajasthan</div>
+        </div>
+        <span class="item-date">Academic Year: 2026-30 (1st Year)</span>
+      </div>
+      <p class="item-desc" style="margin-top: 0.3rem;">
+        <strong>Academic Year:</strong> 2026-30 | <strong>Relevant Coursework:</strong> Programming in C, Problem Solving & Algorithmic Logic, Computer Concepts & Digital Literacy, 
+        Engineering Mathematics, Basic Computation, Technical Communication.
+      </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-row">
+        <span class="skills-label">Programming Languages:</span>
+        <span>C (Core/Procedural), Python (Learning), JavaScript (Foundations)</span>
+      </div>
+      <div class="skills-row">
+        <span class="skills-label">Web Technologies:</span>
+        <span>HTML5, CSS3 (Flexbox/Grid), Responsive Web Design, DOM Manipulation</span>
+      </div>
+      <div class="skills-row">
+        <span class="skills-label">AI & Productivity Tools:</span>
+        <span>ChatGPT, Google Gemini, Anthropic Claude, NotebookLM, Gamma AI, Prompt Engineering</span>
+      </div>
+      <div class="skills-row">
+        <span class="skills-label">Developer Tools:</span>
+        <span>Git & GitHub, GCC Compiler, Code::Blocks, VS Code, Vercel Deployment</span>
+      </div>
+      <div class="skills-row">
+        <span class="skills-label">Core Competencies:</span>
+        <span>Problem Solving, Algorithmic Logic, Technical Writing, Documentation, Teamwork</span>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <h2 class="section-title">Key Projects & Research</h2>
+
+      <div style="margin-bottom: 1rem;">
+        <div class="item-header">
+          <span class="item-title">AI-Assisted Digital Literacy & Workflow Architecture</span>
+          <span class="item-date">2025 - 2026</span>
+        </div>
+        <p class="item-desc"><em>Coursework Research & Practical Implementation</em></p>
+        <ul class="bullet-list">
+          <li>Constructed role-constrained prompt engineering frameworks for academic problem solving, multi-agent evaluation, and research synthesis across ChatGPT, Claude, and Gemini.</li>
+          <li>Synthesized structured study notes and interactive presentations using Google NotebookLM and Gamma AI.</li>
+          <li>Published an intuitive visual learning roadmap ("My AI Learning Journey") detailing practical AI integration for undergraduate engineers.</li>
+        </ul>
+      </div>
+
+      <div style="margin-bottom: 1rem;">
+        <div class="item-header">
+          <span class="item-title">Microplastics in Municipal Water - Executive Technical Report</span>
+          <span class="item-date">2025 - 2026</span>
+        </div>
+        <p class="item-desc"><em>Simulated High-Authority Policy & Engineering Directive</em></p>
+        <ul class="bullet-list">
+          <li>Authored an executive analysis modeling source-to-tap contamination routes, treatment thresholds (coagulation, sedimentation, filtration), and testing protocols.</li>
+          <li>Engineered a phased 6-to-24-month policy execution timeline for municipal water safety departments.</li>
+        </ul>
+      </div>
+
+      <div style="margin-bottom: 1rem;">
+        <div class="item-header">
+          <span class="item-title">C Programming Problem Solving & Algorithmic Lab</span>
+          <span class="item-date">2025 - 2026</span>
+        </div>
+        <p class="item-desc"><em>Academic Lab Implementation</em></p>
+        <ul class="bullet-list">
+          <li>Developed console-based programs implementing validated formatted input/output, conditional logic, loops, and mathematical computation.</li>
+          <li>Practiced systematic dry-running, debugging, and memory tracking in GCC and Code::Blocks.</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="item-header">
+          <span class="item-title">Personal Developer Portfolio Web Application</span>
+          <span class="item-date">2026</span>
+        </div>
+        <p class="item-desc"><em>Vanilla HTML5, CSS3, JavaScript, Vercel</em></p>
+        <ul class="bullet-list">
+          <li>Designed a modern developer portfolio with glassmorphism design, responsive layouts, active scroll spy, interactive lightbox modals, and dark/light modes.</li>
+          <li>Configured for continuous deployment via GitHub and Vercel.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Extracurricular & Achievements -->
+    <section>
+      <h2 class="section-title">Achievements & Extracurricular Activities</h2>
+      <div class="item-header">
+        <div>
+          <span class="item-title">Inter House Roller Skating Competition - Participation</span>
+          <div class="item-org">JECRC University, Jaipur</div>
+        </div>
+        <span class="item-date">2025 - 2026</span>
+      </div>
+      <p class="item-desc" style="margin-top: 0.3rem;">
+        Awarded official Certificate of Participation by Sports Coordinator & Dean Student Welfare for athletic 
+        dedication, sportsmanship, and determination.
+      </p>
+    </section>
+  </div>
+</body>
+</html>
